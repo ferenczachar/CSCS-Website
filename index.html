@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS+CS BAU KFT.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="pics/ico.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="nav-container">
+        <div class="nav">
+            <div class="logo">
+                <a href="#hero"><img src="pics/logo.png" class="logo-pic" alt="logo"></a>
+                <div class="hamburger">
+                    <a href="#nothing"><img src="pics/hamburger.png" alt="MENU" onclick="myFunction()"></a>
+                </div>
+            </div>
+            <div class="menu">
+                <ul id="myLinks">
+                    <li><a href="#hero" class="active">Rólunk</a></li>
+                    <li><a href="#cards">Szolgáltatások</a></li>
+                    <li><a href="#ref">Referenciák</a></li>
+                    <li><a href="#contact">Kapcsolat</a></li>
+                </ul>
+            </div>
+            <div class="ajanlat">
+                <a href="#contact"><button><i class="fa-regular fa-envelope"></i>Ajánlatkérés</button></a>
+            </div>
+        </div>
+    </div>
+
+    <section id="hero">
+    <div class="hero-container">
+        <div class="hero">
+            <div class="h-left">
+                <h1>CS+CS Bau Kft.</h1>
+
+                <p>Cégünk elkötelezett a gipszkarton szerkezetek területén nyújtott minőségi 
+                szolgáltatások iránt. Tapasztalt csapatunk precíz munkavégzéssel és 
+                szakértői tudással rendelkezik, hogy garantálja ügyfeleink elégedettségét.  
+                Referenciáink sokszínűsége és elégedett ügyfeleink száma a
+                megbízhatóságunkról és szakmai hozzáértésünkről tanúskodik.</p>
+                
+                <div class="contact-button">
+                <a href="#contact"><button>Kérj ajánlatot<i class="fa-regular fa-envelope"></i></button></a>
+                </div>
+            </div>
+            <div class="h-right">
+                <img src="pics/ladder.png" alt="ladder">
+                <img src="pics/hero.jpg" alt="heropic">
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="cards">
+    <div class="cards-container">
+        <span class="services-title"><h1>Szolgáltatásaink</h1></span>
+        <div class="cards">
+            <div class="card-1">
+                <img src="pics/drywall.png" alt="drywall">
+                <p class="c-title">Gipszkarton szerelés</p>
+                <p class="c-desc">Tapasztalt és szakképzett csapatunk gondoskodik a gipszkartonfalak, álmennyezetek és egyéb belső térkialakítási elemek precíz és esztétikus kivitelezéséről.</p>
+            </div>
+            <div class="card-2">
+                <img src="pics/paintbrush.png" alt="paintbrush">
+                <p class="c-title">Festés</p>
+                <p class="c-desc">A festés számunkra több, mint egyszerűen a falak színezése; célunk, hogy a helyiségeknek új életet és frissességet adjunk, valamint a hangulat és a stílus harmonikus kialakításához hozzájáruljunk.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="ref">
+    <div class="ref-container">
+        <div class="ref">
+            <div class="ref-title">
+                <h1>Referenciák</h1>
+            </div>
+            <div class="ref-content">
+                <div class="col-1">
+                    <img src="pics/gallery/4.png" alt="kaki">
+                    <img src="pics/gallery/1.JPG" alt="kaki">
+                </div>
+                <div class="col-2">
+                    <img src="pics/gallery/2.JPG" alt="kaki">
+                    <img src="pics/gallery/3.JPG" alt="kaki">
+                </div>
+                <div class="col-3">
+                    <img src="pics/gallery/5.png" alt="kaki">
+                    <img src="pics/gallery/6.png" alt="kaki">
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="contact">
+    <div class="cont-container">
+        <div class="cont-title">
+            <h1>Kapcsolat</h1>
+        </div>
+        <form action="#">
+        <div class="contact-cont">
+                <div class="contact">
+                    <label for="">Vezetéknév</label>
+                    <input type="text" name="vezeteknev" placeholder="Minta">
+                    <label for="">Keresztnév</label>
+                    <input type="text" name="keresztnev" placeholder="János">
+                    <label for="">Email cím</label>
+                    <input id="email" type="email" name="email" placeholder="minta.janos@gmail.com">
+                    <label for="">Telefonszám</label>
+                    <input type="text" name="phone" placeholder="+36 (55) 123 4567">
+                    <label for="">Ajánlatkérés részletei</label>
+                    <textarea name="details" class="details"></textarea>
+                    <button type="submit" name="send">Küldés</button>
+                    <span>Üzenet küldése..</span>
+                </div>
+        </div>
+        </form>
+    </div>
+    </section>
+    <script src="script.js"></script>
+    
+</body>
+</html>
